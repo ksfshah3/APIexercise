@@ -54,7 +54,7 @@ public class APITest extends BaseAPI {
 
 		super.log("Verify age must be integer and 0 > age < 120");
 		Assert.assertTrue((jsonModel.getAge() > 0 && jsonModel.getAge() < 120),
-				"Age limit should be between 0 to 120, Atual age is :" + jsonModel.getAge());
+				"Age limit should be between 0 to 120, Actual age is :" + jsonModel.getAge());
 		
 		super.log("Verify must only be F or M");
 		Assert.assertTrue((jsonModel.getGender().equals("M") || jsonModel.getGender().equals("F")),
